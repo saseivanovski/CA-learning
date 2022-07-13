@@ -1,0 +1,71 @@
+/* styling the body with with thing that mentor wanted*/
+body {
+    font-family: serif;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    background-image: url("grey-oak-tree-hi.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* styling the header */
+h1 {
+     color: lightblue;
+     padding: 20%;    
+}
+/* giving color only on one word */
+span {
+    color: burlywood;
+}
+/* playing with dimensions */
+.aboutMe {
+    color: aliceblue;
+    font-size: large;
+    font-weight: 900;
+    line-height: 2rem;
+    padding: 0% 20%;
+}
+/* created another span which i gave both the id and important value to be the one above all :) */
+#nestedSpan {
+    color: blue !important;
+    background-color: yellow;
+}
+/* just for aesthetic */
+article {
+    margin-top: 10%;
+}
+/* changes again and uppercase all letters */
+.hobbies {
+    background-color: antiquewhite;
+    color: crimson;
+    font-size: large;
+    text-transform: uppercase;
+}
+/* made a line above it */
+.occupation {
+    background-color: darkorange;
+    color: black;
+    text-decoration: overline;
+}
+/* futuristic design with pesudo class */
+a:link {
+    color: cyan;
+    text-decoration: none;
+    letter-spacing: 3rem;
+}
+/* on mouse hover change color */
+a:hover{
+    color: pink;
+}
+/* main chars. for this paragraph */
+.achievements {
+    margin-top: 10%;
+    font-size: xx-large;
+    text-shadow: 2px 2px #ff0000;
+}
+/* this is the final styled id */
+#footer {
+     margin: 20% 0;
+     word-spacing: 2rem;
+     color: fuchsia;
+     font-style: oblique;
+}
