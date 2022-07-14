@@ -1,0 +1,58 @@
+body {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20%;
+}
+/* CSS FOR first.html */
+/* styilng first polygon */
+#red {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+/* cut the text with ... at the end */
+.cutText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;      /* number of lines to show in my polygon*/
+    -webkit-box-orient: vertical;
+}
+/* styling second polygon and implementing scroll if needed */
+#blue {
+    background-color: blue;
+    overflow: auto;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+/* styling third polygon (text is bigger so part of it is placed automaticly outside. no need to add extra code) */
+#green {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+/* to make them positioned side by side */
+article {
+    float: left; 
+    padding: 1.5rem;
+}
+/* on mouse hover increse width for 2 seconds */
+#red:hover, #green:hover {
+    width: 500px;
+    transition: 2s;
+}
+/* on mouse hover rotate 90 for 2 seconds */
+#blue:hover {
+    transform: rotate(90deg);
+    transition: 2s;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* CSS FOR second.html */
