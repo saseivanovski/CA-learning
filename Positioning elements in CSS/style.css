@@ -1,58 +1,132 @@
 body {
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 20%;
+  font-size: x-large;
+  margin-top: 10%;
 }
 /* CSS FOR first.html */
 /* styilng first polygon */
 #red {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+  background-color: red;
+  width: 20%;
+  height: 300px;
 }
 /* cut the text with ... at the end */
 .cutText {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 10;      /* number of lines to show in my polygon*/
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8; /* number of lines to show in my polygon*/
+  -webkit-box-orient: vertical;
 }
 /* styling second polygon and implementing scroll if needed */
 #blue {
-    background-color: blue;
-    overflow: auto;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+  background-color: blue;
+  overflow: auto;
+  width: 20%;
+  height: 300px;
 }
 /* styling third polygon (text is bigger so part of it is placed automaticly outside. no need to add extra code) */
 #green {
-    background-color: green;
-    width: 200px;
-    height: 200px;
+  background-color: green;
+  width: 20%;
+  height: 300px;
 }
-/* to make them positioned side by side */
-article {
-    float: left; 
-    padding: 1.5rem;
+/* to make them positioned side by side and centered */
+.position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* on mouse hover increse width for 2 seconds */
-#red:hover, #green:hover {
-    width: 500px;
-    transition: 2s;
+#red:hover,
+#green:hover {
+  width: 500px;
+  transition: 2s;
 }
 /* on mouse hover rotate 90 for 2 seconds */
 #blue:hover {
-    transform: rotate(90deg);
-    transition: 2s;
+  transform: rotate(90deg);
+  transition: 2s;
 }
 
 p {
-    margin-top: 0;
+  padding: auto;
 }
 
 /* CSS FOR second.html */
+/* fixing the position of the navigation element */
+nav {
+  position: fixed;
+  margin-top: -30px;
+}
+/* centering elements in their parent */
+.secNav {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+/* rotate first button once when page loads*/
+#firstBtn {
+  background-color: aqua;
+  animation: rotation 5s linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* pulse the second button all the time while changeing colors */
+#secondBtn {
+  background-color: red;
+  animation: pulsing 3s ease-out alternate infinite;
+  animation-play-state: running;
+}
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5);
+    background-color: red;
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+  }
+}
+/* going right in the place of neighbour button and changing dimensions */
+#thirdBtn {
+  background-color: blueviolet;
+  animation: swaping 4s infinite linear;
+}
+@keyframes swaping {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(60px) scale(2);
+  }
+}
+/* going in place of the third button */
+#fourthBtn {
+  background-color: chartreuse;
+  animation: back 4s infinite linear;
+}
+@keyframes back {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-60px);
+  }
+}
+/* on hover nav move bottom elements above it  */
+nav:hover + #btn {
+    margin-top: -70px;
+  }
