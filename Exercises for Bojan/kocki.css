@@ -1,0 +1,52 @@
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.firstDiv {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+}
+
+.secondDiv {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    right: 20%;
+    top: 0%;
+}
+
+.thirdDiv {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    
+}
+
+.fourthDiv {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+
+.fifthDiv {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}

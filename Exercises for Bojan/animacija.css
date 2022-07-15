@@ -1,0 +1,39 @@
+body {
+    position: relative;
+}
+
+.prvaKocka {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation-name: forward;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes forward {
+    from {
+      transform: translate(0px);
+    }
+    to {
+      transform: translate(100px);
+    }
+}
+.vtoraKocka {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotation {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+      }
+      100% {
+        transform: translateX(100px) rotate(360deg);
+      }
+    }

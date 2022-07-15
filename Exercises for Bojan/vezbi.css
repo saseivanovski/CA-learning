@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+}
+.homepage-navigation {
+  height: 60px;
+}
+#leftBlock {
+  float: left;
+  width: 20%;
+  height: 60px;
+  background-color: rgb(38, 83, 76);
+}
+
+#middleBlock {
+  float: left;
+  width: 60%;
+  height: 60px;
+  background-color: rgb(149, 156, 53);
+}
+
+#rightBlock {
+  float: right;
+  width: 20%;
+  height: 60px;
+  background-color: rgb(180, 98, 169);
+}
+
+.left-section {
+    float: left;
+    width:20%;
+    height: 200px;
+    background-color: beige;
+}
+
+.middle-section {
+    float: left;
+    width: 60%;
+    height: 200px;
+    background-color: yellow;
+}
+
+.right-section {
+    float: right;
+    width: 20%;
+    height: 200px;
+    background-color: blue;
+}
+
+p {
+    width: 100%;
+    height: 50px;
+    margin: 0%;
+}
+
+article {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+    background-color: aqua;
+}
