@@ -57,15 +57,20 @@ p {
 /* fixing the position of the navigation element */
 nav {
   position: fixed;
-  margin-top: -30px;
+  z-index: 2;
+  background-color: white;
 }
 /* centering elements in their parent */
 .secNav {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   position: relative;
  }
-
+ /* placing beneath the nav */
+#btn {
+  z-index: 1;
+}
 /* rotate first button once when page loads*/
 #firstBtn {
   background-color: aqua;
@@ -127,7 +132,7 @@ nav {
     transform: translate(-60px);
   }
 }
-/* on hover nav move bottom elements above it  */
-nav:hover + #btn {
-    margin-top: -70px;
+/* on hover nav move the elements below above it  */
+nav:hover {
+    z-index: 1;
   }
