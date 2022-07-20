@@ -10,9 +10,9 @@ main {
     flex-flow: row wrap;
 }
  main > * {
-    flex: 1 100%; 
+    flex: 1 100%;
 } 
-/* sidebar */
+ /* sidebar */
 nav {
     flex: 1 auto;
     order: 1;

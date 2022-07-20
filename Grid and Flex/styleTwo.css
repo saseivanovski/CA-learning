@@ -1,0 +1,68 @@
+ body {
+    margin: 0;
+ }
+/* naming elements for grid area  */
+header {grid-area: header;}
+nav {grid-area: nav;}
+article {grid-area: article;}
+footer {grid-area: footer;}
+/* main section */
+ main {
+    display: grid;
+    grid-template-areas: 
+    'header  header'
+    'nav  article'
+    'footer  footer'; 
+ }
+ /* sidebar */
+nav {
+    background-color: lightgray;
+    padding-top: 30px;
+    line-height: 3rem;
+    border-right: 1px solid;
+    margin-top: 60px;
+    width: 30vw;
+}
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    padding-left: 45%;
+}
+/* inside main section */
+.content{
+    flex: 2 0px;
+    order: 2;
+    background-color: lightgray; 
+    margin-top: 77px;
+    padding: 50px;
+    overflow-y: auto;   
+    height: 82vh;      
+}
+p, img {
+    background-color: white;
+    padding: 40px;
+    width: 60%;
+}
+h2 {
+    background-color: rgb(197, 155, 155);
+    width: 30%;
+}
+/* header and footer */
+ header, footer {
+    padding: 30px;
+    background-color: gray;
+    text-align: center;   
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+footer { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
