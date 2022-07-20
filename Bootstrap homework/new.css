@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(224, 210, 178);
+}
+
+img {
+    height: 15rem;
+    width: 10rem;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+h2 {
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+span {
+    margin-left: 10%;
+}
+
+.col-lg-3, .col-lg-6 {
+    padding: 0 3rem;
+} 
+
+
+
