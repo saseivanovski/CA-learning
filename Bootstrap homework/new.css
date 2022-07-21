@@ -26,5 +26,11 @@ span {
     padding: 0 3rem;
 } 
 
+article {
+    background-color: rgb(233, 224, 148);
+}
 
+p {
+    padding: 3%;
+}
 

@@ -13,6 +13,7 @@ footer {grid-area: footer;}
     'header  header'
     'nav  article'
     'footer  footer'; 
+    height: 94vh;
  }
  /* sidebar */
 nav {
@@ -27,7 +28,7 @@ a {
     text-decoration: none;
     font-size: larger;
     color: black;
-    padding-left: 45%;
+    padding-left: 31%;
 }
 /* inside main section */
 .content{
@@ -36,8 +37,7 @@ a {
     background-color: lightgray; 
     margin-top: 77px;
     padding: 50px;
-    overflow-y: auto;   
-    height: 82vh;      
+    overflow-y: auto;         
 }
 p, img {
     background-color: white;
