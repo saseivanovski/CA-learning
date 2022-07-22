@@ -1,0 +1,61 @@
+body {
+    margin: 0; 
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 100px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+}
+
+.firstBox {
+    width: 50px;
+    height: 50px; 
+    margin: 20px 0 0 30px;
+}
+
+.secondBox {
+    width: 100px;
+    height: 30px;    
+    margin: 30px 65vw 0 30px;
+}
+
+.Box {
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: center;
+}
+
+.main {
+    width: 60%;
+    height: max-content;
+    background-color: blue;
+}
+
+p {
+    height: 500px;
+    width: 70%;
+    background-color: rgb(255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
