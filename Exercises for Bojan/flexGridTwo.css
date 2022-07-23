@@ -32,7 +32,6 @@ li {
    /* NAVBAR MENU */
    .menu {
     display: flex;
-    gap: 1em;
     font-size: 18px;
    }
    .menu li:hover {
@@ -41,7 +40,7 @@ li {
     transition: 0.3s ease;
    }
    .menu li {
-    padding: 5px 14px;
+    padding: 5px 5px;
    }
 
     /* First Section */
