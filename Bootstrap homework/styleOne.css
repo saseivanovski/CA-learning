@@ -34,7 +34,7 @@ a {
     margin-top: 77px;
     padding: 2% 5% 2% 5%;
     overflow-y: auto;     
-    height: 85vh;
+    height: max-content;
 }
 
 .content::-webkit-scrollbar {
