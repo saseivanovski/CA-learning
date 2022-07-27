@@ -5,11 +5,11 @@ let job = "Web.Dev";
 let male = true;
 
 let user = {
-    fName: "Sasho",
-    lName: "Ivanovski",
-    age: 33,
-    job: "Web.Dev",
-    male: true
+    firstName: fName,
+    lastName: lName,
+    userAge: age,
+    userJob: job,
+    maleGender: male
 };
 
 console.log(user);
