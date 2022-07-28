@@ -43,9 +43,9 @@ console.log(first, second, third, fourth);
 let fifth = true ? first > second : fifth = false;
 console.log(fifth);
 let sixsth = (third % fourth);
-console.log(sixsth);
+console.log(sixth);
 let seventh = "I am the "
-if (fifth = true && sixsth < 3) {
+if (fifth = true && sixth < 3) {
     console.log(seventh + "light");
 }else {
     console.log(seventh + "darkness");
