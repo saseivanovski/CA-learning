@@ -16,5 +16,5 @@ console.log(user);
 
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", function () {
-  alert(user.fName);
+  alert(user.lName);
 });
