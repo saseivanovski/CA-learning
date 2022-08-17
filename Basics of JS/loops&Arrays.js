@@ -15,6 +15,9 @@ console.log([556575757].toString().length);
 //eve so loop
 const digits = function (i) {
   let result = 0;
+  if (i == 0) {
+    return (result = 1);
+  }
   while (i > 0) {
     i = Math.floor(i / 10); //go delime brojot so 10,decimalata ja spustame na najniskata bliska vrednost,(so sekoe delenje eliminira eden broj) i broi kolku pati ja pravi operacijata
     result++; //i vo varijablata result ni dodava +1 za sekoja gorenapravena presmetka na i
