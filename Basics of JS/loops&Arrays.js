@@ -35,8 +35,8 @@ console.log(largestNumber);
 // Tuka pravime sporedba , ovoj loop ja vrti celata niza i gi stava borevite eden po eden (zamenski) vo praznata array.
 // se dodeka brojot od n e pogolem od toj vo nBig, ke go zameni
 //koga ke zavrsi loopot na celata niza najviskiot broj ke ostane vo nBig nizata
-let n = [2, 31, 55, 62, 93, 5, 125];
-let nBig = [];
+let n = [-123, -31, -55, -62, -93, -5, -125]; //eve primer i ako site se negativni broevi
+let nBig = n[0]; //go zemame prviot element i so nego sporeduvame ponataka, (ako e prazna ke ni dade error ako se site broevi negativni)
 for (let i = 0; i < n.length; i++) {
   if (nBig < n[i]) {
     nBig = n[i];
