@@ -10,7 +10,7 @@ console.log(removeNumber([1, 2, 3, 4, 5, 6], 5));
 
 //2
 //vaka bi proveril za dolzina na broj , ke pretrovram vo string i ke izbrojam dolzina
-console.log([556575757].toString().split("").length);
+console.log([556575757].toString().length);
 
 //eve so loop
 const digits = function (i) {
