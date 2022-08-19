@@ -48,3 +48,12 @@ const sorting = function (sortArray) {
   return sortingDuplicates;
 };
 console.log(sorting([5, 3, 3, 2, 1, 0]));
+
+//ili vaka uste polesno so Set metodot koj sto avtomatski gi vadi duplikatite od niza
+const sortingA = function (sortArray) {
+  let newArr = sortArray.sort();
+  console.log(newArr);
+  let removingDuplicates = [...new Set(newArr)];
+  console.log(removingDuplicates);
+};
+sortingA([5, 3, 3, 2, 1, 0]);
