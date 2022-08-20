@@ -40,8 +40,7 @@ const sorting = function (sortArray) {
   console.log(newArr);
   let sortingDuplicates = [];
   for (let i of sortArray) {
-    if (sortingDuplicates.includes(i * 1)) {
-    } else {
+    if (!sortingDuplicates.includes(i * 1)) {
       sortingDuplicates.push(i * 1);
     }
   }
