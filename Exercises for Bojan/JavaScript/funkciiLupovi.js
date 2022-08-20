@@ -48,6 +48,28 @@ const sorting = function (sortArray) {
 };
 console.log(sorting([5, 3, 3, 2, 1, 0]));
 
+//namesto sort metodot mozeme da koristime i bubble sort funkcija i toa bi izlgedalo vaka
+function bubbleSort(array) {
+  let sortingDuplicates = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] > array[j]) {
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+    }
+  }
+  console.log(array);
+  for (let i of array) {
+    if (!sortingDuplicates.includes(i * 1)) {
+      sortingDuplicates.push(i * 1);
+    }
+  }
+  return sortingDuplicates;
+}
+console.log(bubbleSort([5, 3, 3, 2, 1, 0]));
+
 //ili vaka uste polesno so Set metodot koj sto avtomatski gi vadi duplikatite od niza
 const sortingA = function (sortArray) {
   let newArr = sortArray.sort();
