@@ -70,7 +70,7 @@ function bubbleSort(array) {
 }
 console.log(bubbleSort([5, 3, 3, 2, 1, 0]));
 
-//ili vaka uste polesno so Set metodot koj sto avtomatski gi vadi duplikatite od niza
+//ili vaka uste polesno so Set strukturata koja ne dozvoluva da se zapisuvaat duplikati vo nea
 const sortingA = function (sortArray) {
   let newArr = sortArray.sort();
   console.log(newArr);
