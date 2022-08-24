@@ -1,3 +1,4 @@
+'use strict'
 //1.
 const library = [
   { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
@@ -19,7 +20,7 @@ const authors = library.map(function (author) {
 console.log(authors);
 
 //books with library 1254
-const books = library.filter((libraryID) => libraryID.libraryID == 1254); //so filter metod mi dava prazno,(a na js.fiddle.net raboti kako sto treba)
+const books = library.filter((libraryID) => libraryID.libraryID == 1254); //Zosto so filter metod tuka mi dava array so prazen objekt ne mi pecati vrednost ?,(a na js.fiddle.net raboti kako sto treba)
 console.log(books);
 
 //2.
@@ -65,4 +66,4 @@ const userName = users.map(function (name) {
 });
 //calling function for age check
 let b = new Car(userName, userAge);
-console.log(b.userCanDrive());
+b.userCanDrive();
