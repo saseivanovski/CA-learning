@@ -46,19 +46,21 @@ class Car {
   }
 }
 
-//my car
+//my car age
 let myCar = new Car("Ford", 2012);
 console.log(myCar.carAge());
 
-//users array with objects
+//users array with objects, age check
 let users = [
   { name: "Sasho", age: 33 },
   { name: "Vesna", age: 22 },
   { name: "Ivan", age: 31 },
 ];
+//eliminating only the age numbers
 const user = users.map(function (age) {
   return age.age;
 });
 console.log(user);
+//calling function for age check
 let b = new Car("", user);
 b.userAge();
