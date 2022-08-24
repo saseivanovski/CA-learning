@@ -56,7 +56,7 @@ let users = [
   { name: "Vesna", age: 22 },
   { name: "Ivan", age: 31 },
 ];
-//eliminating only the age numbers
+//deconstracting name and age
 const userAge = users.map(function (age) {
   return age.age;
 });
