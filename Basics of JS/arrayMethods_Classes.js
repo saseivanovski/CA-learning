@@ -35,29 +35,30 @@ class Car {
     return date.getFullYear() - this.year;
   }
   //checking user age
-  userAge(x) {
-    for (let i = 0; i < x.length; i++) {
-      if (this.year > 25) {
-        return `You can drive`;
+  userAge() {
+    for (let i = 0; i < this.year.length; i++) {
+      if (this.year[i] > 25) {
+        console.log(`You can drive`);
       } else {
-        return `You can only drive cars with max 105hp`;
+        console.log(`You can only drive cars with max 105hp`);
       }
     }
   }
 }
+
 //my car
 let myCar = new Car("Ford", 2012);
 console.log(myCar.carAge());
+
 //users array with objects
 let users = [
   { name: "Sasho", age: 33 },
   { name: "Vesna", age: 22 },
   { name: "Ivan", age: 31 },
 ];
-//separated users
-let user1 = new Car("", 33);
-console.log(user1.userAge(users));
-let user2 = new Car("", 22);
-console.log(user2.userAge(users));
-let user3 = new Car("", 31);
-console.log(user3.userAge(users));
+const user = users.map(function (age) {
+  return age.age;
+});
+console.log(user);
+let b = new Car("", user);
+b.userAge();
