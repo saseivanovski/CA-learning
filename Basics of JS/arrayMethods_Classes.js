@@ -19,7 +19,7 @@ const authors = library.map(function (author) {
 console.log(authors);
 
 //books with library 1254
-const books = library.filter((libraryID) => libraryID.libraryID == 1254); //so filter metod mi dava prazno ne znam zosto
+const books = library.filter((libraryID) => libraryID.libraryID == 1254); //so filter metod mi dava prazno,(a na js.fiddle.net raboti kako sto treba)
 console.log(books);
 
 //2.
@@ -35,7 +35,7 @@ class Car {
     return date.getFullYear() - this.year;
   }
   //checking user age
-  userAge() {
+  userCanDrive() {
     for (let i = 0; i < this.year.length; i++) {
       if (this.year[i] > 25) {
         console.log(`${this.brand[i]} You can drive`);
@@ -65,4 +65,4 @@ const userName = users.map(function (name) {
 });
 //calling function for age check
 let b = new Car(userName, userAge);
-console.log(b.userAge());
+console.log(b.userCanDrive());
