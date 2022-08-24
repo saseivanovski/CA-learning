@@ -19,7 +19,7 @@ const authors = library.map(function (author) {
 console.log(authors);
 
 //books with library 1254
-const books = library.find((libraryID) => libraryID.libraryID == 1254); //so filter metod mi dava prazno ne znam zosto
+const books = library.filter((libraryID) => libraryID.libraryID == 1254); //so filter metod mi dava prazno ne znam zosto
 console.log(books);
 
 //2.
@@ -38,9 +38,9 @@ class Car {
   userAge() {
     for (let i = 0; i < this.year.length; i++) {
       if (this.year[i] > 25) {
-        console.log(`You can drive`);
+        console.log(`${this.brand[i]} You can drive`);
       } else {
-        console.log(`You can only drive cars with max 105hp`);
+        console.log(`${this.brand[i]} You can only drive cars with max 105hp`);
       }
     }
   }
@@ -57,10 +57,12 @@ let users = [
   { name: "Ivan", age: 31 },
 ];
 //eliminating only the age numbers
-const user = users.map(function (age) {
+const userAge = users.map(function (age) {
   return age.age;
 });
-console.log(user);
+const userName = users.map(function (name) {
+  return name.name;
+});
 //calling function for age check
-let b = new Car("", user);
-b.userAge();
+let b = new Car(userName, userAge);
+console.log(b.userAge());
