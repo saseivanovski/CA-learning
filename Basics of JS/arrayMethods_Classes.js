@@ -6,7 +6,7 @@ const library = [
 ];
 
 //sort objects by title
-var sorted = library.sort(function (a, b) {
+let sorted = library.sort(function (a, b) {
   return a.title > b.title;
 });
 sorted = JSON.stringify(sorted); //ima li i drug nacin ?
