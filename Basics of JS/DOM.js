@@ -40,9 +40,11 @@ document.querySelector("#form").addEventListener("submit", function (a) {
   console.log(nameInput.value, surnameInput.value);
 });
 //when any key is pressd - print
-let input = document.querySelector('[name="name"]');
-let printName = document.getElementById("li");
+// let input = document.querySelector('[name="name"]');
+// let printName = document.getElementById("li");
 
-input.addEventListener("keyup", function (a) {
-  printName.innerHTML = a.currentTarget.value;
+document.querySelector("button").addEventListener("click", function () {
+  let x = document.getElementById("name").value;
+  let y = document.getElementById("surname").value;
+  document.getElementById("li").innerHTML = `${x} ${y}`;
 });
