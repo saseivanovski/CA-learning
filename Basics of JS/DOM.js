@@ -39,9 +39,6 @@ document.querySelector("#form").addEventListener("submit", function (a) {
   a.preventDefault();
   console.log(nameInput.value, surnameInput.value);
 });
-//when any key is pressd - print
-// let input = document.querySelector('[name="name"]');
-// let printName = document.getElementById("li");
 
 document.querySelector("button").addEventListener("click", function () {
   let x = document.getElementById("name").value;
