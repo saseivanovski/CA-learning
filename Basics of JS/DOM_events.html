@@ -7,27 +7,56 @@
     <title>Document</title>
   </head>
   <style>
-    .errorName {
+    .errorName,
+    .errorLastname,
+    .errorAddress,
+    .errorGender,
+    .errorEmail {
       color: red;
     }
   </style>
   <body>
     <form id="form" action="">
       <label for="">Name</label><br />
-      <input class="name" type="text" /><br />
+      <input
+        class="name"
+        type="text"
+        onfocus="focused()"
+        onkeydown="key()"
+      /><br />
       <div class="errorName"></div>
       <label for="">Last Name</label><br />
-      <input class="lasname" type="text" /><br />
-      <div class="errorLastName"></div>
+      <input
+        class="lastname"
+        type="text"
+        onfocus="focused()"
+        onkeydown="key()"
+      /><br />
+      <div class="errorLastname"></div>
       <label for="">Address</label><br />
-      <input class="address" type="text" /><br />
+      <input
+        class="address"
+        type="text"
+        onfocus="focused()"
+        onkeydown="key()"
+      /><br />
       <div class="errorAddress"></div>
       <label for="">Gender</label><br />
-      <input class="gender" type="text" /><br />
-      <div class="errorgender"></div>
+      <input
+        class="gender"
+        type="text"
+        onfocus="focused()"
+        onkeydown="key()"
+      /><br />
+      <div class="errorGender"></div>
       <label for="">Email</label><br />
-      <input class="email" type="text" /><br />
-      <div class="erroremail"></div>
+      <input
+        class="email"
+        type="text"
+        onfocus="focused()"
+        onkeydown="key()"
+      /><br />
+      <div class="errorEmail"></div>
       <button id="button" type="submit">submit</button>
       <button id="reset" type="submit">reset</button>
     </form>
