@@ -30,12 +30,12 @@ validation();
 //     document.querySelector(".errorName").innerHTML = "Fill";
 //   }
 // };
+
 // document.querySelector(".name").onfocus = function () {
 //   if (document.querySelector(".name").value == "") {
 //     document.querySelector(".errorName").innerHTML = "Fill";
 //   }
 // };
-
 // document.querySelector(".name").addEventListener("keydown", function () {
 //   document.querySelector(".errorName").innerHTML = "";
 // });
@@ -58,6 +58,7 @@ function focused() {
     document.querySelector(".errorEmail").innerHTML = "Fill";
   }
 }
+
 // if we enter a key remove error message
 function key() {
   document.querySelector(".errorName").innerHTML = "";
