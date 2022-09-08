@@ -23,8 +23,8 @@ validation();
 
 // 2
 // document.querySelector(".name").onblur = function () {
-//   if (document.querySelector(".name", "lastName").value != "") {
-//     document.querySelector(".errorName").innerHTML = "";
+//   if (document.querySelector(".name").value == "") {
+//     document.querySelector(".errorName").innerHTML = "Fill";
 //   }
 // };
 
