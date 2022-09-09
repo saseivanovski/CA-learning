@@ -17,8 +17,11 @@ const Start = document
     setTimeout(() => {
       timing = setInterval(() => {
         console.log(timer++);
-      }, 1000);
-    }, 2000);
+        if (timer === 11) {
+          clearInterval(timing);
+        }
+      }, 1 * 1000);
+    }, 2 * 1000);
   });
 
 const Pause = document
