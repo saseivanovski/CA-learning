@@ -1,4 +1,4 @@
-// Clock in devtools
+// Blinking clock in console.log
 // setInterval(() => {
 //   console.log(
 //     Intl.DateTimeFormat(navigator.locale, { timeStyle: "medium" }).format(
