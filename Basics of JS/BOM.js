@@ -10,7 +10,7 @@
 
 // 1 , 2
 let timer = 0;
-
+// delay starting counter every time we push start button (even after pause)
 const Start = document
   .querySelector("#start")
   .addEventListener("click", function () {
@@ -19,6 +19,7 @@ const Start = document
         console.log(timer++);
         if (timer === 11) {
           clearInterval(timing);
+          timer = 0;
         }
       }, 1 * 1000);
     }, 2 * 1000);
