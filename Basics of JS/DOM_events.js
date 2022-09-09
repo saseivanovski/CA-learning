@@ -41,7 +41,7 @@ validation();
 // });
 
 // because the onfocus is for one element only at given time, global function with if's
-function focused() {
+function blured() {
   if (document.querySelector(".name").value == "") {
     document.querySelector(".errorName").innerHTML = "Fill";
   }
@@ -58,6 +58,22 @@ function focused() {
     document.querySelector(".errorEmail").innerHTML = "Fill";
   }
 }
+// focus off clear error
+document.querySelector(".name").addEventListener("focus", function () {
+  document.querySelector(".errorName").innerHTML = "";
+});
+document.querySelector(".lastname").addEventListener("focus", function () {
+  document.querySelector(".errorLastname").innerHTML = "";
+});
+document.querySelector(".address").addEventListener("focus", function () {
+  document.querySelector(".errorAddress").innerHTML = "";
+});
+document.querySelector(".gender").addEventListener("focus", function () {
+  document.querySelector(".errorGender").innerHTML = "";
+});
+document.querySelector(".email").addEventListener("focus", function () {
+  document.querySelector(".errorEmail").innerHTML = "";
+});
 
 // if we enter a key remove error message
 function key() {
