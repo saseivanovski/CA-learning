@@ -20,6 +20,14 @@ function paragraphs() {
   }, 1 * 1000);
 }
 //validate form
+//black magic :) code is not mine (found it), prevents inputs of numbers
+function preventNumber(e) {
+  let keycode = e.keycode ? e.keycode : e.which;
+  if ((keycode > 47 && keycode < 58) || (keycode > 95 && keycode < 107)) {
+    e.preventDefault();
+  }
+}
+//the validation
 function validation(event) {
   event.preventDefault();
   let f = document.getElementById("fname");
@@ -30,8 +38,8 @@ function validation(event) {
 
   if (e.value.includes("@")) {
     alert("ok");
+    console.log(f.value, l.value, a.value, e.value, m.value);
   } else {
     alert("wrong email");
   }
-  console.log(f.value, l.value, a.value, e.value, m.value);
 }

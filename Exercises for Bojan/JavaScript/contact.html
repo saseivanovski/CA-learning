@@ -20,9 +20,9 @@
       </button>
     </div>
     <form name="form" id="form" onsubmit="validation(event)">
-      Name: <input type="text" name="fname" id="fname" required><br />
-      L. Name: <input type="text" name="lname" id="lname" required><br />
-      Address: <input type="text" name="address" id="address" required><br />
+      Name: <input type="text" name="fname" id="fname" required onkeydown="preventNumber(event)" onkeyup="preventNumber(event)"><br />
+      L. Name: <input type="text" name="lname" id="lname" required onkeydown="preventNumber(event)" onkeyup="preventNumber(event)"><br />
+      Address: <input type="text" name="address" id="address" required onkeydown="preventNumber(event)" onkeyup="preventNumber(event)"><br />
       Email: <input type="text" name="email" id="email" required><br />
       <!-- accept only numbers from 0 - 9 and max length is 9 -->
       Mobile: <input type="text" name="mobile" id="mobile" required pattern=".{1,1}" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><br />
