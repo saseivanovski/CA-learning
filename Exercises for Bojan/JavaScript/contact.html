@@ -19,13 +19,17 @@
         Contact
       </button>
     </div>
-    <form name="form" onsubmit="return validation()">
+    <form name="form" onsubmit="validation()">
       Name: <input type="text" name="fname"><br />
       L. Name: <input type="text" name="lname"><br />
       Address: <input type="text" name="address"><br />
       Email: <input type="text" name="email"><br />
       <!-- accept only numbers from 0 - 9 and max length is 9 -->
       Number: <input type="text" name="mobile" required pattern=".{1,1}" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><br />
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
         <input type="submit" value="Submit"></input>
     <script src="DOM_BOM.js"></script>
   </body>

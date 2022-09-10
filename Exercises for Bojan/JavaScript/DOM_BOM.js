@@ -26,4 +26,9 @@ function validation() {
   let a = document.forms["form"]["address"].value;
   let e = document.forms["form"]["email"].value;
   let m = document.forms["form"]["mobile"].value;
+  if (e !== "" && e.includes("@")) {
+    alert("ok");
+  } else {
+    alert("wrong email");
+  }
 }
