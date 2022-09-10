@@ -20,15 +20,18 @@ function paragraphs() {
   }, 1 * 1000);
 }
 //validate form
-function validation() {
-  let f = document.forms["form"]["fname"].value;
-  let l = document.forms["form"]["lname"].value;
-  let a = document.forms["form"]["address"].value;
-  let e = document.forms["form"]["email"].value;
-  let m = document.forms["form"]["mobile"].value;
-  if (e.includes("@")) {
+function validation(event) {
+  event.preventDefault();
+  let f = document.getElementById("fname");
+  let l = document.getElementById("lname");
+  let a = document.getElementById("address");
+  let e = document.getElementById("email");
+  let m = document.getElementById("mobile");
+
+  if (e.value.includes("@")) {
     alert("ok");
   } else {
     alert("wrong email");
   }
+  console.log(f.value, l.value, a.value, e.value, m.value);
 }
