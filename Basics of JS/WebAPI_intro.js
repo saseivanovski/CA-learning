@@ -1,21 +1,27 @@
-//1. i can write same code like this for every element
-function validation() {
-  const a = document.getElementById("name");
-  let text = "ok";
-  if (a.validity.patternMismatch) {
-    text = "not ok";
-  }
-  document.getElementById("p").innerHTML = text;
-}
-
-//trying another solution...
+//1.
+// i can write same code like this for every element
 // function validation() {
-//   let inputs = document.getElementsByTagName("input");
-
-//   for (let i = 0; i < inputs.length; i++) {
-//     console.log(inputs[i].checkValidity());
+//   const a = document.getElementById("name");
+//   let text = "ok";
+//   if (a.validity.patternMismatch) {
+//     text = "not ok";
 //   }
+//   document.getElementById("p").innerHTML = text;
 // }
+
+// another solution...
+function validation() {
+  let inputs = document.getElementsByTagName("input");
+  let spans = document.getElementsByTagName("span");
+
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].checkValidity() == true) {
+      spans[i].innerHTML = "ok";
+    } else {
+      spans[i].innerHTML = "not ok";
+    }
+  }
+}
 
 //2.
 function storage() {
