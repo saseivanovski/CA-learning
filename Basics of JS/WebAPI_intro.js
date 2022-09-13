@@ -23,6 +23,10 @@ function validation() {
   }
 }
 
+function submit() {
+  validation();
+}
+
 //2.
 function storage() {
   let a = prompt("Enter your age");
