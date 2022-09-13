@@ -1,6 +1,6 @@
 //1. i can write same code like this for every element
 function validation() {
-  const form = document.getElementById("form");
+  //   const form = document.getElementById("form");
   const a = document.getElementById("name");
   let text = "ok";
   if (a.validity.patternMismatch) {
