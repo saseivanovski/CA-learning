@@ -11,20 +11,26 @@
       >To Other Page</a
     ><br />
     <form id="form">
-      <input id="name" type="text" pattern="[a-z]{1,10}" />Name<br />
-      <p id="p"></p>
-      <input id="lastname" type="text" pattern="[a-z]{1,10}" />Last Name<br />
+      Name: <input id="name" type="text" pattern="[a-z]{1,10}" /><span
+        id="p"
+      ></span
+      ><br />
+      Last Name:
+      <input id="lastname" type="text" pattern="[a-z]{1,10}" /><span></span
+      ><br />
+      Pass:
       <input
         id="password"
         type="password"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-      />Pass<br />
+      /><span></span><br />
+      Email:
       <input
         id="email"
         type="email"
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-      />Email<br />
-      <input id="number" type="tel" pattern=".{9,9}" />Tel<br />
+      /><span></span><br />
+      Tel: <input id="number" type="tel" pattern=".{9,9}" /><span></span><br />
       <button type="submit" onclick="validation()">Submit</button>
     </form>
     <script src="WebAPI_intro.js"></script>
