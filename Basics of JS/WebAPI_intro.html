@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="http://127.0.0.1:5500/Basics%20of%20JS/WebAPI_intro1.html"
+      >To Other Page</a
+    ><br />
+    <form id="form" onsubmit="validation()">
+      <input id="name" type="text" pattern="[a-z]{1,10}" />Name<br />
+      <p id="p"></p>
+      <input id="lastname" type="text" pattern="[a-z]{1,10}" />Last Name<br />
+      <input
+        id="password"
+        type="password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      />Pass<br />
+      <input
+        id="email"
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />Email<br />
+      <input id="number" type="tel" pattern=".{9,9}" />Tel<br />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="WebAPI_intro.js"></script>
+  </body>
+</html>
