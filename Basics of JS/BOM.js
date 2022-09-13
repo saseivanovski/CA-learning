@@ -55,3 +55,6 @@ console.log(window.location.hostname);
 console.log(window.location.pathname);
 console.log(window.location.search);
 console.log(window.location.hash);
+//updated ...
+const a = new URL("https://www.youtube.com/watch?v=_7rT-ixivWU");
+console.log(a);
