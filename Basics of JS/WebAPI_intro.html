@@ -10,7 +10,7 @@
     <a href="http://127.0.0.1:5500/Basics%20of%20JS/WebAPI_intro1.html"
       >To Other Page</a
     ><br />
-    <form id="form" onsubmit="validation()">
+    <form id="form">
       <input id="name" type="text" pattern="[a-z]{1,10}" />Name<br />
       <p id="p"></p>
       <input id="lastname" type="text" pattern="[a-z]{1,10}" />Last Name<br />
@@ -25,7 +25,7 @@
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
       />Email<br />
       <input id="number" type="tel" pattern=".{9,9}" />Tel<br />
-      <button type="submit">Submit</button>
+      <button type="submit" onclick="validation()">Submit</button>
     </form>
     <script src="WebAPI_intro.js"></script>
   </body>
