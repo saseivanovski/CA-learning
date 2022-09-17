@@ -16,7 +16,9 @@
       </thead>
       <tbody></tbody>
     </table>
+
     <button onclick="getXMLFile()">Get DATA with AJAX</button>
+    <div id="OK"></div>
     <!-- <button onclick="fetchXML()">Get DATA with Fetch</button> -->
     <!-- <table id="demo"></table> -->
 
@@ -49,7 +51,9 @@
       //   document.getElementById("demo").innerHTML = table;
       // }
 
-      //homework 1 transforming the top code into fetch
+      ////////////////////////////////////////////
+      ////////////////////////////////////////////
+      // homework 1 transforming the top code into fetch
       let xmlContent = "";
       let tableContent = document.getElementById("content");
       fetch("gethint.xml")
@@ -75,6 +79,20 @@
             tableContent.children[1].appendChild(row);
           }
         });
+
+      ////////////////////////////////////////////
+      ////////////////////////////////////////////
+      //homework 2 transforming bot code into plain AJAX
+      function getXMLFile() {
+        let request = new XMLHttpRequest();
+        request.open("GET", "https://jsonplaceholder.typicode.com/posts");
+        request.onreadystatechange = function () {
+          if (request.readyState == 4) {
+            document.getElementById("OK").innerHTML = "Successful Post :)";
+          }
+        };
+        request.send();
+      }
 
       // fetch("https://jsonplaceholder.typicode.com/posts", {
       //   method: "POST",
