@@ -65,11 +65,11 @@
             let row = document.createElement("tr");
 
             let td = document.createElement("td");
-            td.innerHTML = artist[i].childNodes.nodeValue;
+            td.innerHTML = artist[i].childNodes[0].nodeValue;
             row.appendChild(td);
 
             td = document.createElement("td");
-            td.innerHTML = title[i].childNodes.nodeValue;
+            td.innerHTML = title[i].childNodes[0].nodeValue;
             row.appendChild(td);
 
             tableContent.children[1].appendChild(row);
