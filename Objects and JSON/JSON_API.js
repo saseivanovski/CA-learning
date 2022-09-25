@@ -9,7 +9,7 @@ function getFile() {
       document.getElementById("OK").innerHTML = "Successful Post";
     }
   };
-  request.send();
+  request.send(JSON.stringify({ name: "Sase", age: "33" }));
 }
 
 // 2. show first 10 objects in HTML
@@ -48,11 +48,12 @@ function getLastTen() {
 }
 
 function fromBehind(data) {
-  let a = JSON.parse(data);
-  console.log(a);
-  for (let i = a.length; i > 89; i--) {
+  let objects = JSON.parse(data);
+  let a = objects.id;
+  console.log(objects);
+  for (let i = objects.length; i > objects.length - 11; i--) {
     let row = document.createElement("tr");
-    row.innerHTML = JSON.stringify(a[i]);
+    row.innerHTML = JSON.stringify(objects[i]);
     behindTable.appendChild(row);
   }
 }
