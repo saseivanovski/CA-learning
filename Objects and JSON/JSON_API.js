@@ -49,11 +49,10 @@ function getLastTen() {
 
 function fromBehind(data) {
   let objects = JSON.parse(data);
-  let a = objects.id;
-  console.log(objects);
-  for (let i = objects.length; i > objects.length - 11; i--) {
+  console.log(objects[1].id);
+  for (let i = objects.length - 1; i > objects.length - 11; i--) {
     let row = document.createElement("tr");
-    row.innerHTML = JSON.stringify(objects[i]);
+    row.innerHTML = objects[i].id;
     behindTable.appendChild(row);
   }
 }
