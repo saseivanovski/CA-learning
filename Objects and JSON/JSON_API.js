@@ -28,6 +28,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
     for (let i = 0; i < 10; i++) {
       let row = document.createElement("tr");
       row.innerHTML = JSON.stringify(data[i]);
+      //row.innerHTML = Object.values(data[i]);
       table.appendChild(row);
     }
   })
