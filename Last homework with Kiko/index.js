@@ -15,15 +15,15 @@ let d = document.createElement("div");
 d.classList.add("navbar");
 c.prepend(d);
 
-function navKocki() {
-  let array = [1, 2, 3, 4, 5, 6];
-  for (const i of array) {
-    let box = document.createElement("div");
-    box.classList.add("colorBlue");
-    d.appendChild(box);
-  }
-}
-navKocki();
+// function navKocki() {
+//   let array = [1, 2, 3, 4, 5, 6];
+//   for (const i of array) {
+//     let box = document.createElement("div");
+//     box.classList.add("colorBlue");
+//     d.appendChild(box);
+//   }
+// }
+// navKocki();
 
 let not = document.getElementById('notifications')
 let pic = document.createElement('div')
